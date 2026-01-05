@@ -31,7 +31,7 @@ showBuild = true
 
 # Position the widget on the screen
 pos1  = 'left: .5rem'
-pos2  = 'top: 1050px'
+pos2  = 'bottom: .5rem'
 #-----------------------------------------------------------------------
 
 # --- Create the themes ------------------------------------------------
@@ -69,7 +69,7 @@ if theme == 'dark'
 
 # --- Collect the data -------------------------------------------------
 #noinspection JSUnusedGlobalSymbols
-command: "macos/data.sh"
+command: "version-uptime/data.sh"
 
 # --- Set the refresh frequency ----------------------------------------
 refreshFrequency: '1m'
@@ -98,7 +98,7 @@ update: (output,domEl) ->
 
   # --- Create the OS information --------------------------------------
   [osName, osVersion, osBuild] = OS_Version.split(" ")
-  iconDir = 'macos/icons/'
+  iconDir = 'version-uptime/icons/'
 
   icon = ''; osRelease = ''
   macOSVersion = parseInt( osVersion, 10 )
